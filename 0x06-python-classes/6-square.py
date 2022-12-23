@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-"""The module 6-square contains the class Square.
-it performs area of the square and prints the square
-with positioning."""
+"""The module 6-square contains the class Square. it performs area of
+the square and prints the square with positioning."""
 
 
 class Square:
-    """The Class that defines a square by:
-    private instance attribute: size
-    public instance method: area
-    public instance method: my_print"""
+    """The Class that defines a square by: private instance attribute: size
+    public instance method: area public instance method: my_print"""
     def __init__(self, size=0, position=(0, 0)):
         """Initialization of the Class."""
         if type(size) != int:
