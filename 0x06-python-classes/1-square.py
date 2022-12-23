@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""The module 1-square contains a class Squarethat define
+a square private instance attribut, size"""
 
 
 class Square:
