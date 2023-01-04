@@ -104,10 +104,10 @@ class SinglyLinkedList:
                     next_n = tmp
                     tmp = Node(value)
                     tmp.next_node = next_n
-                if prev is not None:
-                    prev.next_node = tmp
-                else:
-                    self.__head = tmp
+                    if prev is not None:
+                        prev.next_node = tmp
+                    else:
+                        self.__head = tmp
                 else:
                     next_n = tmp.next_node
                     tmp.next_node = Node(value)
