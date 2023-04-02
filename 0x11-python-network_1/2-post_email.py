@@ -7,11 +7,13 @@ import urllib.request
 import urllib.parse
 import sys
 
-url = sys.argv[1]
-email = sys.argv[2]
+if __name__ == "__main__":
 
-data = urllib.parse.urlencode({'email': email}).encode('utf-8')
-reqst = urllib.request.Request(url, data)
+    url = sys.argv[1]
+    email = sys.argv[2]
 
-with urllib.request.urlopen(reqst) as response:
-    print(response.read().decode('utf-8'))
+    data = urllib.parse.urlencode({'email': email}).encode('utf-8')
+    reqst = urllib.request.Request(url, data)
+
+    with urllib.request.urlopen(reqst) as response:
+        print(response.read().decode('utf-8'))
